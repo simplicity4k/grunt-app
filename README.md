@@ -31,7 +31,7 @@ grunt dist
 
 ```
 grunt server
-grunt protractor.
+grunt protractor
 ```
 
 Or
@@ -40,5 +40,5 @@ Or
 grunt dist
 set NODE_ENV=production
 node dist\http.js
-grunt protractor.
+grunt protractor
 ```
