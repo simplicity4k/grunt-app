@@ -1,0 +1,6 @@
+extends template/layout
+
+block content
+    h4#content_title= message
+    h5#content_subtitle= error.status
+    pre#content_body #{error.stack}

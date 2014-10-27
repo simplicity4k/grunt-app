@@ -1,0 +1,41 @@
+doctype html
+html(lang='fr' ng-app='Application')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+        title= title
+        <!-- build:css public/css/application.min.css -->
+        link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.css')
+        link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap-theme.css')
+        link(rel='stylesheet', href='/css/application.css')
+        <!-- endbuild -->
+
+    body
+
+        div.container
+
+            nav.navbar.navbar-default(role='navigation')
+                div.container
+                    div.navbar-header
+                        button.navbar-toggle(type='button' data-toggle='collapse' data-target='#navbar-collapse')
+                            span.sr-only
+                            span.icon-bar
+                            span.icon-bar
+                            span.icon-bar
+                        a.navbar-brand(href='/') Express Application
+                    div.collapse.navbar-collapse(id='navbar-collapse')
+                        ul.nav.navbar-nav
+                            li
+                                a(href='/error') error
+
+            block content
+
+        <!-- build:js public/js/application.min.js -->
+        script(src='/bower_components/jquery/dist/jquery.js')
+        script(src='/bower_components/bootstrap/dist/js/bootstrap.js')
+        script(src='/bower_components/angular/angular.js')
+        script(src='/bower_components/angular-route/angular-route.js')
+        script(src='/js/application.js')
+        <!-- endbuild -->
