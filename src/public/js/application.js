@@ -5,7 +5,7 @@
     angular.module('Application', ['ngRoute', 'ApplicationControllers'], function () {
     });
 
-    angular.module('Application').constant('ENTRY_POINT', '/grunt-sample-001/index.html#');
+    angular.module('Application').constant('ENTRY_POINT', '/grunt-app/index.html#');
 
     var configuration = function ($routeProvider) {
         $routeProvider
