@@ -9,25 +9,25 @@ End to end tests with protractor on firefox and chrome.
 
 Distribute optimized package with compressed files and gzip for server compression.
 
-##Install
+## Install
 
 ```
 npm install.
 ```
 
-##Develop
+## Develop
 
 ```
 grunt server
 ```
 
-##Distribute
+## Distribute
 
 ```
 grunt dist
 ```
 
-##End to end tests
+## End to end tests
 
 ```
 grunt server
