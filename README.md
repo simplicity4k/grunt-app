@@ -9,26 +9,36 @@ End to end tests with protractor on firefox and chrome.
 
 Distribute optimized package with compressed files and gzip for server compression.
 
-Install
--------
+##Install
 
-Run npm install.
+```
+npm install.
+```
 
-Develop
--------
+##Develop
 
-Run grunt server
+```
+grunt server
+```
 
-Distribute
-----------
+##Distribute
 
-Run grunt dist
+```
+grunt dist
+```
 
-End to end tests
-----------------
+##End to end tests
 
-Run grunt server, then grunt protractor.
+```
+grunt server
+grunt protractor.
+```
 
 Or
 
-Run grunt dist, set NODE_ENV=production (or development), node dist\http.js, and then grunt protractor.
+```
+grunt dist
+set NODE_ENV=production
+node dist\http.js
+grunt protractor.
+```
