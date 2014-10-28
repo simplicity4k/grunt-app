@@ -45,7 +45,10 @@ server.use(function (error, request, response, next) {
     response.status(error.status || 500);
     response.render('error', {
         message: error.message,
-        error: {stack: 'Page not found'}
+        error: {
+            status: '404',
+            stack: 'Page not found'
+        }
     });
     next();
 });
